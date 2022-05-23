@@ -1,4 +1,4 @@
-const reverseLowerCaseUpperCase = (string) => {
+const thirdFilter = (string) => {
   let convertor = [];
 
   for(let eachCharacter of string) {
@@ -15,4 +15,4 @@ const reverseLowerCaseUpperCase = (string) => {
   return convertor.join('');
 }
 
-export default reverseLowerCaseUpperCase;
+export default thirdFilter;

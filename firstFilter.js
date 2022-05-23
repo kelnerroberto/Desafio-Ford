@@ -3,8 +3,8 @@ const firstFilter = (string) => {
   let convertor = [];
 
   for(let eachCharacter of string) {
-    let charCode = eachCharacter.charCodeAt(0) + LENGTH;
-    convertor.push(charCode);
+    let charCode = eachCharacter.charCodeAt(0);
+    convertor.push(String.fromCharCode(charCode + LENGTH));
   }
 
   return convertor.join('');
