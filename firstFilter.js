@@ -1,4 +1,4 @@
-export default firstFilter = (string) => {
+const firstFilter = (string) => {
   const LENGTH = string.length;
   let convertor = [];
 
@@ -9,3 +9,5 @@ export default firstFilter = (string) => {
 
   return convertor.join('');
 }
+
+export default firstFilter;
