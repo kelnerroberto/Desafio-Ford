@@ -1,13 +1,16 @@
 const firstFilter = (string) => {
-  const LENGTH = string.length;
   let convertor = [];
-
+  console.log(string.length);
   for(let eachCharacter of string) {
     let charCode = eachCharacter.charCodeAt(0);
-    convertor.push(String.fromCharCode(charCode + LENGTH));
+    const takeCharCodeSum = charCode + string.length;
+    if (takeCharCodeSum > 126) {
+      const newCharCode = (takeCharCodeSum - 126) + 32;
+      convertor.push(String.fromCharCode(newCharCode));
+    }
+    convertor.push(String.fromCharCode(charCode + string.length));
   }
-
-  return convertor.join('');
+  console.log(convertor.join(''));
 }
 
-export default firstFilter;
+firstFilter('Eu sou 45');
