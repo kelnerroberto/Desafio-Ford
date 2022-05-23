@@ -1,7 +1,14 @@
-import firstFilter from "./firstFilter";
-import secondFilter from "./secondFilter";
-import thirdFilter from "./thirdFilter";
+const firstFilter = require('./firstFilter');
+const secondFilter = require("./secondFilter");
+const thirdFilter = require("./thirdFilter");
 
 const main = (string) => {
-  const 
+  const firstConversion = firstFilter(string);
+  const secondConversion = secondFilter(firstConversion);
+  const thirdConverstion = thirdFilter(secondConversion);
+
+  console.log(thirdConverstion);
+  return thirdConverstion;
 }
+
+main('teste 12');

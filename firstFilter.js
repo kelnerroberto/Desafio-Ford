@@ -1,6 +1,5 @@
 const firstFilter = (string) => {
   let convertor = [];
-  console.log(string.length);
   for(let eachCharacter of string) {
     let charCode = eachCharacter.charCodeAt(0);
     const takeCharCodeSum = charCode + string.length;
@@ -10,7 +9,7 @@ const firstFilter = (string) => {
     }
     convertor.push(String.fromCharCode(charCode + string.length));
   }
-  console.log(convertor.join(''));
+  return convertor.join('');
 }
 
-firstFilter('Eu sou 45');
+module.exports = firstFilter;

@@ -6,4 +6,4 @@ const secondFilter = (string) => {
   return reversedArrayToString;
 }
 
-export default secondFilter;
+module.exports =  secondFilter;

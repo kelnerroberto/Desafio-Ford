@@ -15,4 +15,4 @@ const thirdFilter = (string) => {
   return convertor.join('');
 }
 
-export default thirdFilter;
+module.exports =  thirdFilter;
