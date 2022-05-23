@@ -10,5 +10,3 @@ const main = (string) => {
   console.log(thirdConverstion);
   return thirdConverstion;
 }
-
-main('teste 12');
